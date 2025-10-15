@@ -19,4 +19,6 @@ Calculadora.prototype = {
         }
         return a / b;
     }
-}
+};
+
+export {Calculadora};

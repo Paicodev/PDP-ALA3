@@ -1,4 +1,6 @@
 "use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.Calculadora = Calculadora;
 //Constructor de la calculadora
 function Calculadora() { }
 //Metodos del prototipo que realizaran los operandos entre numeros
