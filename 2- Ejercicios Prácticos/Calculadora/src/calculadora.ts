@@ -1,22 +1,29 @@
 //Constructor de la calculadora
-function Calculadora() {}
+class calculadora {
+    a: number;
+    b: number;
+    
+    constructor(a: number, b: number){
+    this.a = a;
+    this.b = b;
+    }
 
-//Metodos del prototipo que realizaran los operandos entre numeros
-Calculadora.prototype = {
-    sumar(a:number, b:number): number{
-        return a + b;
-    },
-    restar(a:number, b:number): number{
-        return a - b;
-    },
-    multiplicar(a:number, b:number): number{
-        return a * b;
-    },
-    dividir(a:number, b:number): number{
-        if (b === 0) {
+    sumar(): number{
+        return this.a + this.b;
+    }
+    restar(): number{
+        return this.a - this.b;
+    }
+    multiplicar(): number{
+        return this.a * this.b;
+    }
+    dividir(): number{
+        if (this.b === 0) {
             //Palabra clave throw que trata de manejar la excepción
             throw new Error("No se puede dividir por cero");
         }
-        return a / b;
+        return this.a / this.b;
     }
 }
+
+export {calculadora};
