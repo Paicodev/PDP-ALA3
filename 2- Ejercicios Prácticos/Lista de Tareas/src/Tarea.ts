@@ -75,3 +75,5 @@ return obj;
     console.log("Última Edición: " + this.edicion);
     return "----------------------------";
 }
+
+export { Tarea };
