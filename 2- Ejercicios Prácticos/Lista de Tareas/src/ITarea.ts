@@ -1,4 +1,4 @@
-interface ITarea {
+interface iTarea {
 titulo: string;
 descripcion: string;
 estado: string;
@@ -8,4 +8,4 @@ creacion: Date;
 edicion: Date;
 }
 
-export { ITarea };
+export { iTarea };
