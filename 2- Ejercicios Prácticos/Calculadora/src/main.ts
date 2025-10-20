@@ -26,11 +26,11 @@ async main(){
             break;
          }
 
-        //las variables a y b recibiran un string debido al await del modulo input pero con parseFloat se convertiran de tipo 
-        let a = parseFloat(await input("Ingrese el primer número: "));
-        let b = parseFloat(await input("Ingrese el segundo número: "));
+        //las variables operando_a y operando_b recibiran un string debido al await del modulo input pero con parseFloat se convertiran de tipo 
+        let operando_a = parseFloat(await input("Ingrese el primer número: "));
+        let operando_b = parseFloat(await input("Ingrese el segundo número: "));
         //Instanciacion de la clase calculadora usando los numeros ingresados como parametros
-        const calc = new calculadora(a,b);
+        const calc = new calculadora(operando_a,operando_b);
         //la variable resultado puede ser un string o un numero.
         let resultado: number | string;
 
@@ -48,7 +48,7 @@ async main(){
                 console.log("Resultado: "+ resultado);
                 break;
             case "4":
-                if (b === 0) {
+                if (operando_b === 0) {
                     console.log("Error: no se puede dividir por cero.");
                 } else {
                     resultado = calc.dividir();
