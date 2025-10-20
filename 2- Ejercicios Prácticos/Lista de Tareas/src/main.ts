@@ -184,13 +184,13 @@ Opción: `);
             await menuMostrar("Todas");
             break;
         case "2":
-            await menuMostrar("Todas");
+            await menuMostrar("Pendiente");
             break;
         case "3":
-            await menuMostrar("Todas");
+            await menuMostrar("En Curso");
             break;
         case "4":
-            await menuMostrar("Todas");
+            await menuMostrar("Cancelada");
             break;
         case "0":
             console.log("Opcion Invalida.");

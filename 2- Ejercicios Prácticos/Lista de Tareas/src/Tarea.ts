@@ -2,8 +2,6 @@ import { iTarea } from "./iTarea";
 
 //Definimos la funcion constructora Tarea, que recibe a this de tipo iTarea y los parametros necesarios para crear una tarea
 function Tarea(this: iTarea, titulo: string, descripcion: string, estado: string, dificultad: number, vencimiento: Date | null){
-    
-{
     this.titulo = titulo;
     this.descripcion = descripcion;
     this.estado = estado;
@@ -11,8 +9,6 @@ function Tarea(this: iTarea, titulo: string, descripcion: string, estado: string
     this.vencimiento = vencimiento;
     this.creacion = new Date();
     this.edicion = new Date();
-};
-
 }
 
 /*Metodos agregados al prototipo de Tarea
