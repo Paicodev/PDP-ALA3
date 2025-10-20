@@ -1,28 +1,28 @@
 //Constructor de la calculadora
 class calculadora {
-    a: number;
-    b: number;
+    operando_a: number;
+    operando_b: number;
     
-    constructor(a: number, b: number){
-    this.a = a;
-    this.b = b;
+    constructor(operando_a: number, operando_b: number){
+    this.operando_a = operando_a;
+    this.operando_b = operando_b;
     }
 
     sumar(): number{
-        return this.a + this.b;
+        return this.operando_a + this.operando_b;
     }
     restar(): number{
-        return this.a - this.b;
+        return this.operando_a - this.operando_b;
     }
     multiplicar(): number{
-        return this.a * this.b;
+        return this.operando_a * this.operando_b;
     }
     dividir(): number{
-        if (this.b === 0) {
+        if (this.operando_b === 0) {
             //Palabra clave throw que trata de manejar la excepción
             throw new Error("No se puede dividir por cero");
         }
-        return this.a / this.b;
+        return this.operando_a / this.operando_b;
     }
 }
 
